@@ -2,8 +2,7 @@
  - hosts: slave3
    become: true
    tasks:
-     - name: create a file
-       file:
-        path: /root/vanaja.txt
-        state: touch
-        mode: 0777
+     - name: install java
+       yum:
+         name: java
+         state: installed
