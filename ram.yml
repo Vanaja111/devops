@@ -1,0 +1,9 @@
+---
+ - hosts: slave3
+   become: true
+   tasks:
+     - name: create a file
+       file:
+        path: /root/sai.txt
+        state: touch
+        mode: 0777
