@@ -1,8 +1,8 @@
 ---
- - hosts: slave3
+ - host: slave3
    become: true
    tasks:
-     - name: install java
+     - name: install  a java
        yum:
-         name: java
-         state: installed
+        name: java
+        state: installed
