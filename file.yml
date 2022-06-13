@@ -1,0 +1,9 @@
+---
+ - hosts: slave8
+   become: truve
+   tasks:
+     - name: create a file
+       file:
+        path: /root/baba.txt
+        state: touch
+        mode: 0777
